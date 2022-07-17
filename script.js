@@ -272,9 +272,9 @@ stopBtn.addEventListener("click", function () {
       separate.style.width = "5px";
       separate.style.color = "#fff";
       separate.style.backgroundColor = "#fff";
-      separate.style.animation = "cardAnimation 1s";
+      separate.style.animation = "cardAnimation 0.25s";
       document.getElementById("cards").appendChild(separate);
-      delay(1000).then(() => dealer());
+      delay(500).then(() => dealer());
    }
 });
 
@@ -332,7 +332,7 @@ async function dealer() {
          }
          gameLogic(); // decides whether player has lost or still in game
          newCard = randomCard(); // pulling new card from deck
-         await delay(1000);
+         await delay(500);
       } while (
          ((dealerSum < sumVal || sumValWithAce > dealerSum) && dealerSum < 21) ||
          (dealerAce && dealerSumWithAce < sumVal) ||

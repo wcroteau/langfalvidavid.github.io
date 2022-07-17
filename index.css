@@ -92,11 +92,11 @@ img{
     height: 80%;
     margin: 0 .1em;
     border-radius: 6px;
-    animation: cardAnimation 1s;
+    animation: cardAnimation 0.25s;
 }
 
 #message{
-    animation: messageAnimation 1s;
+    animation: messageAnimation 0.25s;
 }
 
 @keyframes cardAnimation{
